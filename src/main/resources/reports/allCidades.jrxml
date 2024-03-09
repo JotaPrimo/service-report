@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.2.final using JasperReports Library version 6.21.2-8434a0bd7c3bbc37cbf916f2968d35e4b165821a  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="allCidades" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="5dec7e9d-327b-4309-b141-7f0d43f30dd4">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="JESSICA DB"/>
+	<style name="estilo_cores_alternada" mode="Opaque" backcolor="#FFFFFF">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{REPORT_COUNT} % 2 == 0]]></conditionExpression>
+			<style mode="Opaque" backcolor="#CCFFFF"/>
+		</conditionalStyle>
+	</style>
+	<queryString language="SQL">
+		<![CDATA[select 
+	c.nome as cidade, c.populacao,
+	e.nome as estado, e.sigla as sigla_estado 
+from cidades c
+left join estados e on e.id = c.estados_id 
+order by c.nome 
+]]>
+	</queryString>
+	<field name="cidade" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="cidade"/>
+		<property name="com.jaspersoft.studio.field.label" value="cidade"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="cidades"/>
+	</field>
+	<field name="populacao" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.name" value="populacao"/>
+		<property name="com.jaspersoft.studio.field.label" value="populacao"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="cidades"/>
+	</field>
+	<field name="estado" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="estado"/>
+		<property name="com.jaspersoft.studio.field.label" value="estado"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="estados"/>
+	</field>
+	<field name="sigla_estado" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="sigla_estado"/>
+		<property name="com.jaspersoft.studio.field.label" value="sigla_estado"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="estados"/>
+	</field>
+	<variable name="cidade1" class="java.lang.Integer" resetType="Column" calculation="Count">
+		<variableExpression><![CDATA[$F{cidade}]]></variableExpression>
+	</variable>
+	<variable name="populacao1" class="java.lang.Long" resetType="Column" calculation="Sum">
+		<variableExpression><![CDATA[$F{populacao}]]></variableExpression>
+	</variable>
+	<variable name="populacao2" class="java.lang.Long" resetType="Column" calculation="Average">
+		<variableExpression><![CDATA[$F{populacao}]]></variableExpression>
+	</variable>
+	<variable name="populacao3" class="java.lang.Long" resetType="Column" calculation="Average">
+		<variableExpression><![CDATA[$F{populacao}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="80" splitType="Stretch">
+			<staticText>
+				<reportElement x="-20" y="20" width="595" height="30" uuid="c05a6547-1047-453b-ac58-0ffef3fddfd9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Relatório de Cidades]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="210" y="50" width="140" height="30" uuid="c0ab4cfc-6da8-46cb-ad94-71c2a8363025"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Listagem de cidades]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="60" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="140" y="0" width="139" height="30" forecolor="#FCFCFC" backcolor="#030000" uuid="b614941a-148d-44e0-b0e7-239f5b349935"/>
+				<box padding="5"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[População]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="140" height="30" forecolor="#FCFCFC" backcolor="#030000" uuid="f1881eec-8e6d-4685-8d60-8f272df2f89b"/>
+				<box padding="5"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Cidade]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="417" y="0" width="138" height="30" forecolor="#FCFCFC" backcolor="#030000" uuid="585dfb9b-f2a7-4ac9-8a23-1253b15ddb40"/>
+				<box padding="5"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Sigla Estado]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="270" y="0" width="147" height="30" forecolor="#FCFCFC" backcolor="#030000" uuid="50ec9b20-9efb-4a13-b019-658802742d19"/>
+				<box padding="5"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Estado]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="39" splitType="Stretch">
+			<textField>
+				<reportElement style="estilo_cores_alternada" x="141" y="4" width="138" height="30" uuid="30886031-3a80-4573-ba98-1666cb80a1e7"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{populacao}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="estilo_cores_alternada" x="0" y="4" width="141" height="30" uuid="434bf0a9-0ded-4e83-bcbb-647204d95627"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{cidade}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="estilo_cores_alternada" x="417" y="4" width="138" height="30" uuid="75a168f3-c437-4976-b686-f27e10e3628a"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{sigla_estado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="estilo_cores_alternada" x="279" y="4" width="138" height="30" uuid="8227a483-d09e-4c1c-8bce-66f5d6226294"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{estado}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="135" y="31" width="144" height="30" uuid="cd17c4b3-aaae-493e-8d52-a95757b35dc1"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Total:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="380" y="30" width="175" height="30" uuid="d9d24c1d-7c62-4ea9-bab9-c7a8a09bba06"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Média]]></text>
+			</staticText>
+			<textField pattern="#,##0.###;#,##0.###-">
+				<reportElement x="170" y="31" width="88" height="30" uuid="e756a334-aad5-4bcf-ae0d-becd6cd88597"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$V{populacao1}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.###;#,##0.###-">
+				<reportElement x="417" y="30" width="100" height="30" uuid="3c65db95-913e-437c-bab3-a56d0bb5f398"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$V{populacao3}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
