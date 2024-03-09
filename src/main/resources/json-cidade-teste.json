@@ -1,0 +1,1202 @@
+[
+  {
+    "cidade" : "Abacate da Pedreira",
+    "populacao" : 2661524,
+    "estado" : "Amapá",
+    "sigla_estado" : "AP"
+  },
+  {
+    "cidade" : "Abadia",
+    "populacao" : 7949655,
+    "estado" : "Bahia",
+    "sigla_estado" : "BA"
+  },
+  {
+    "cidade" : "Abadia de Goias",
+    "populacao" : 2692205,
+    "estado" : "Goiás",
+    "sigla_estado" : "GO"
+  },
+  {
+    "cidade" : "Abadia dos Dourados",
+    "populacao" : 7868867,
+    "estado" : "Minas Gerais",
+    "sigla_estado" : "MG"
+  },
+  {
+    "cidade" : "Abadiania",
+    "populacao" : 7627670,
+    "estado" : "Goiás",
+    "sigla_estado" : "GO"
+  },
+  {
+    "cidade" : "Abaete",
+    "populacao" : 7157368,
+    "estado" : "Minas Gerais",
+    "sigla_estado" : "MG"
+  },
+  {
+    "cidade" : "Abaete dos Mendes",
+    "populacao" : 3160363,
+    "estado" : "Minas Gerais",
+    "sigla_estado" : "MG"
+  },
+  {
+    "cidade" : "Abaetetuba",
+    "populacao" : 7321856,
+    "estado" : "Pará",
+    "sigla_estado" : "PA"
+  },
+  {
+    "cidade" : "Abaiara",
+    "populacao" : 6015916,
+    "estado" : "Ceará",
+    "sigla_estado" : "CE"
+  },
+  {
+    "cidade" : "Abaiba",
+    "populacao" : 5440988,
+    "estado" : "Minas Gerais",
+    "sigla_estado" : "MG"
+  },
+  {
+    "cidade" : "Abaira",
+    "populacao" : 9190289,
+    "estado" : "Bahia",
+    "sigla_estado" : "BA"
+  },
+  {
+    "cidade" : "Abapa",
+    "populacao" : 5743756,
+    "estado" : "Paraná",
+    "sigla_estado" : "PR"
+  },
+  {
+    "cidade" : "Abare",
+    "populacao" : 5400903,
+    "estado" : "Bahia",
+    "sigla_estado" : "BA"
+  },
+  {
+    "cidade" : "Abarracamento",
+    "populacao" : 7013137,
+    "estado" : "Rio de Janeiro",
+    "sigla_estado" : "RJ"
+  },
+  {
+    "cidade" : "Abatia",
+    "populacao" : 4105424,
+    "estado" : "Paraná",
+    "sigla_estado" : "PR"
+  },
+  {
+    "cidade" : "Abdon Batista",
+    "populacao" : 6569806,
+    "estado" : "Santa Catarina",
+    "sigla_estado" : "SC"
+  },
+  {
+    "cidade" : "Abelardo Luz",
+    "populacao" : 3796994,
+    "estado" : "Santa Catarina",
+    "sigla_estado" : "SC"
+  },
+  {
+    "cidade" : "Abel Figueiredo",
+    "populacao" : 9546363,
+    "estado" : "Pará",
+    "sigla_estado" : "PA"
+  },
+  {
+    "cidade" : "Abelhas",
+    "populacao" : 9426837,
+    "estado" : "Bahia",
+    "sigla_estado" : "BA"
+  },
+  {
+    "cidade" : "Abilio Martins",
+    "populacao" : 2546908,
+    "estado" : "Ceará",
+    "sigla_estado" : "CE"
+  },
+  {
+    "cidade" : "Abóbora",
+    "populacao" : 1969855,
+    "estado" : "Bahia",
+    "sigla_estado" : "BA"
+  },
+  {
+    "cidade" : "Abraao",
+    "populacao" : 770130,
+    "estado" : "Rio de Janeiro",
+    "sigla_estado" : "RJ"
+  },
+  {
+    "cidade" : "Abrantes",
+    "populacao" : 3107515,
+    "estado" : "Bahia",
+    "sigla_estado" : "BA"
+  },
+  {
+    "cidade" : "Abre Campo",
+    "populacao" : 3686663,
+    "estado" : "Minas Gerais",
+    "sigla_estado" : "MG"
+  },
+  {
+    "cidade" : "Abreu e Lima",
+    "populacao" : 7083059,
+    "estado" : "Pernambuco",
+    "sigla_estado" : "PE"
+  },
+  {
+    "cidade" : "Abreulandia",
+    "populacao" : 9429966,
+    "estado" : "Tocantins",
+    "sigla_estado" : "TO"
+  },
+  {
+    "cidade" : "Abreus",
+    "populacao" : 4172343,
+    "estado" : "Minas Gerais",
+    "sigla_estado" : "MG"
+  },
+  {
+    "cidade" : "Abuna",
+    "populacao" : 8837995,
+    "estado" : "Rondônia",
+    "sigla_estado" : "RO"
+  },
+  {
+    "cidade" : "Acaiaca",
+    "populacao" : 5051525,
+    "estado" : "Minas Gerais",
+    "sigla_estado" : "MG"
+  },
+  {
+    "cidade" : "Acailandia",
+    "populacao" : 2479592,
+    "estado" : "Maranhão",
+    "sigla_estado" : "MA"
+  },
+  {
+    "cidade" : "Acajutiba",
+    "populacao" : 7618396,
+    "estado" : "Bahia",
+    "sigla_estado" : "BA"
+  },
+  {
+    "cidade" : "Acampamento das Minas",
+    "populacao" : 3922043,
+    "estado" : "Paraná",
+    "sigla_estado" : "PR"
+  },
+  {
+    "cidade" : "Acara",
+    "populacao" : 1376127,
+    "estado" : "Pará",
+    "sigla_estado" : "PA"
+  },
+  {
+    "cidade" : "Acarape",
+    "populacao" : 5124525,
+    "estado" : "Ceará",
+    "sigla_estado" : "CE"
+  },
+  {
+    "cidade" : "Acarau",
+    "populacao" : 5398454,
+    "estado" : "Ceará",
+    "sigla_estado" : "CE"
+  },
+  {
+    "cidade" : "Acari",
+    "populacao" : 1775979,
+    "estado" : "Rio Grande do Norte",
+    "sigla_estado" : "RN"
+  },
+  {
+    "cidade" : "Acegua",
+    "populacao" : 1884007,
+    "estado" : "Rio Grande do Sul",
+    "sigla_estado" : "RS"
+  },
+  {
+    "cidade" : "Acioli",
+    "populacao" : 4021477,
+    "estado" : "Espírito Santo",
+    "sigla_estado" : "ES"
+  },
+  {
+    "cidade" : "Acopiara",
+    "populacao" : 9975170,
+    "estado" : "Ceará",
+    "sigla_estado" : "CE"
+  },
+  {
+    "cidade" : "Acorizal",
+    "populacao" : 5578282,
+    "estado" : "Mato Grosso",
+    "sigla_estado" : "MT"
+  },
+  {
+    "cidade" : "Acreuna",
+    "populacao" : 974784,
+    "estado" : "Goiás",
+    "sigla_estado" : "GO"
+  },
+  {
+    "cidade" : "Acu",
+    "populacao" : 8224032,
+    "estado" : "Rio Grande do Norte",
+    "sigla_estado" : "RN"
+  },
+  {
+    "cidade" : "Acucena",
+    "populacao" : 8702469,
+    "estado" : "Minas Gerais",
+    "sigla_estado" : "MG"
+  },
+  {
+    "cidade" : "Acu da Torre",
+    "populacao" : 4023441,
+    "estado" : "Bahia",
+    "sigla_estado" : "BA"
+  },
+  {
+    "cidade" : "Acudina",
+    "populacao" : 3103726,
+    "estado" : "Bahia",
+    "sigla_estado" : "BA"
+  },
+  {
+    "cidade" : "Acungui",
+    "populacao" : 3914435,
+    "estado" : "Paraná",
+    "sigla_estado" : "PR"
+  },
+  {
+    "cidade" : "Acupe",
+    "populacao" : 3034030,
+    "estado" : "Bahia",
+    "sigla_estado" : "BA"
+  },
+  {
+    "cidade" : "Acurui",
+    "populacao" : 2246151,
+    "estado" : "Minas Gerais",
+    "sigla_estado" : "MG"
+  },
+  {
+    "cidade" : "Adamantina",
+    "populacao" : 5373554,
+    "estado" : "São Paulo",
+    "sigla_estado" : "SP"
+  },
+  {
+    "cidade" : "Adao Colares",
+    "populacao" : 7328045,
+    "estado" : "Minas Gerais",
+    "sigla_estado" : "MG"
+  },
+  {
+    "cidade" : "Adelandia",
+    "populacao" : 6436627,
+    "estado" : "Goiás",
+    "sigla_estado" : "GO"
+  },
+  {
+    "cidade" : "Adhemar de Barros",
+    "populacao" : 263558,
+    "estado" : "Paraná",
+    "sigla_estado" : "PR"
+  },
+  {
+    "cidade" : "Adolfo",
+    "populacao" : 8933366,
+    "estado" : "São Paulo",
+    "sigla_estado" : "SP"
+  },
+  {
+    "cidade" : "Adrianopolis",
+    "populacao" : 662555,
+    "estado" : "Paraná",
+    "sigla_estado" : "PR"
+  },
+  {
+    "cidade" : "Adrianópolis",
+    "populacao" : 9842356,
+    "estado" : "Ceará",
+    "sigla_estado" : "CE"
+  },
+  {
+    "cidade" : "Adustina",
+    "populacao" : 6185821,
+    "estado" : "Bahia",
+    "sigla_estado" : "BA"
+  },
+  {
+    "cidade" : "Afligidos",
+    "populacao" : 4621887,
+    "estado" : "Bahia",
+    "sigla_estado" : "BA"
+  },
+  {
+    "cidade" : "Afogados da Ingazeira",
+    "populacao" : 1660390,
+    "estado" : "Pernambuco",
+    "sigla_estado" : "PE"
+  },
+  {
+    "cidade" : "Afonso Arinos",
+    "populacao" : 1947434,
+    "estado" : "Rio de Janeiro",
+    "sigla_estado" : "RJ"
+  },
+  {
+    "cidade" : "Afonso Bezerra",
+    "populacao" : 1865242,
+    "estado" : "Rio Grande do Norte",
+    "sigla_estado" : "RN"
+  },
+  {
+    "cidade" : "Afonso Claudio",
+    "populacao" : 1445834,
+    "estado" : "Espírito Santo",
+    "sigla_estado" : "ES"
+  },
+  {
+    "cidade" : "Afonso Cunha",
+    "populacao" : 5506469,
+    "estado" : "Maranhão",
+    "sigla_estado" : "MA"
+  },
+  {
+    "cidade" : "Afonso Rodrigues",
+    "populacao" : 6777324,
+    "estado" : "Rio Grande do Sul",
+    "sigla_estado" : "RS"
+  },
+  {
+    "cidade" : "Afranio",
+    "populacao" : 5982386,
+    "estado" : "Pernambuco",
+    "sigla_estado" : "PE"
+  },
+  {
+    "cidade" : "Afrânio Peixoto",
+    "populacao" : 9686007,
+    "estado" : "Bahia",
+    "sigla_estado" : "BA"
+  },
+  {
+    "cidade" : "Afua",
+    "populacao" : 3902314,
+    "estado" : "Pará",
+    "sigla_estado" : "PA"
+  },
+  {
+    "cidade" : "Agha",
+    "populacao" : 4498428,
+    "estado" : "Espírito Santo",
+    "sigla_estado" : "ES"
+  },
+  {
+    "cidade" : "Agisse",
+    "populacao" : 4838098,
+    "estado" : "São Paulo",
+    "sigla_estado" : "SP"
+  },
+  {
+    "cidade" : "Agostinho",
+    "populacao" : 1094537,
+    "estado" : "Paraná",
+    "sigla_estado" : "PR"
+  },
+  {
+    "cidade" : "Agrestina",
+    "populacao" : 1770907,
+    "estado" : "Pernambuco",
+    "sigla_estado" : "PE"
+  },
+  {
+    "cidade" : "Agricolandia",
+    "populacao" : 3579366,
+    "estado" : "Piauí",
+    "sigla_estado" : "PI"
+  },
+  {
+    "cidade" : "Agrolândia",
+    "populacao" : 4894327,
+    "estado" : "Santa Catarina",
+    "sigla_estado" : "SC"
+  },
+  {
+    "cidade" : "Agronômica",
+    "populacao" : 5194695,
+    "estado" : "Santa Catarina",
+    "sigla_estado" : "SC"
+  },
+  {
+    "cidade" : "Agropolis Bela Vista",
+    "populacao" : 9864097,
+    "estado" : "Pará",
+    "sigla_estado" : "PA"
+  },
+  {
+    "cidade" : "Agua Azul",
+    "populacao" : 8210009,
+    "estado" : "Paraná",
+    "sigla_estado" : "PR"
+  },
+  {
+    "cidade" : "Agua Azul do Norte",
+    "populacao" : 3658888,
+    "estado" : "Pará",
+    "sigla_estado" : "PA"
+  },
+  {
+    "cidade" : "Agua Boa",
+    "populacao" : 8563646,
+    "estado" : "Mato Grosso",
+    "sigla_estado" : "MT"
+  },
+  {
+    "cidade" : "Agua Boa",
+    "populacao" : 7463013,
+    "estado" : "Minas Gerais",
+    "sigla_estado" : "MG"
+  },
+  {
+    "cidade" : "Agua Boa",
+    "populacao" : 9856777,
+    "estado" : "Mato Grosso do Sul",
+    "sigla_estado" : "MS"
+  },
+  {
+    "cidade" : "Agua Boa",
+    "populacao" : 2652609,
+    "estado" : "Paraná",
+    "sigla_estado" : "PR"
+  },
+  {
+    "cidade" : "Agua Branca",
+    "populacao" : 1154890,
+    "estado" : "Paraná",
+    "sigla_estado" : "PR"
+  },
+  {
+    "cidade" : "Agua Branca",
+    "populacao" : 2071066,
+    "estado" : "Piauí",
+    "sigla_estado" : "PI"
+  },
+  {
+    "cidade" : "Agua Branca",
+    "populacao" : 5943854,
+    "estado" : "Paraíba",
+    "sigla_estado" : "PB"
+  },
+  {
+    "cidade" : "Água Branca",
+    "populacao" : 6730952,
+    "estado" : "Alagoas",
+    "sigla_estado" : "AL"
+  },
+  {
+    "cidade" : "Agua Branca de Minas",
+    "populacao" : 8417848,
+    "estado" : "Minas Gerais",
+    "sigla_estado" : "MG"
+  },
+  {
+    "cidade" : "Água Branca do Amapari",
+    "populacao" : 1638098,
+    "estado" : "Amapá",
+    "sigla_estado" : "AP"
+  },
+  {
+    "cidade" : "Agua Clara",
+    "populacao" : 6543391,
+    "estado" : "Mato Grosso do Sul",
+    "sigla_estado" : "MS"
+  },
+  {
+    "cidade" : "Agua Comprida",
+    "populacao" : 7994881,
+    "estado" : "Minas Gerais",
+    "sigla_estado" : "MG"
+  },
+  {
+    "cidade" : "Aguacu",
+    "populacao" : 2783411,
+    "estado" : "Mato Grosso",
+    "sigla_estado" : "MT"
+  },
+  {
+    "cidade" : "Agua do Boi",
+    "populacao" : 5734412,
+    "estado" : "Paraná",
+    "sigla_estado" : "PR"
+  },
+  {
+    "cidade" : "Água Doce",
+    "populacao" : 7103893,
+    "estado" : "Bahia",
+    "sigla_estado" : "BA"
+  },
+  {
+    "cidade" : "Água Doce",
+    "populacao" : 6704231,
+    "estado" : "Santa Catarina",
+    "sigla_estado" : "SC"
+  },
+  {
+    "cidade" : "Água Doce do Norte",
+    "populacao" : 2809263,
+    "estado" : "Espírito Santo",
+    "sigla_estado" : "ES"
+  },
+  {
+    "cidade" : "Agua Fria",
+    "populacao" : 1812731,
+    "estado" : "Pará",
+    "sigla_estado" : "PA"
+  },
+  {
+    "cidade" : "Agua Fria",
+    "populacao" : 9645156,
+    "estado" : "Pernambuco",
+    "sigla_estado" : "PE"
+  },
+  {
+    "cidade" : "Agua Fria",
+    "populacao" : 1917376,
+    "estado" : "Mato Grosso",
+    "sigla_estado" : "MT"
+  },
+  {
+    "cidade" : "Água Fria",
+    "populacao" : 7259742,
+    "estado" : "Bahia",
+    "sigla_estado" : "BA"
+  },
+  {
+    "cidade" : "Agua Fria de Goias",
+    "populacao" : 1275917,
+    "estado" : "Goiás",
+    "sigla_estado" : "GO"
+  },
+  {
+    "cidade" : "Aguai",
+    "populacao" : 2546394,
+    "estado" : "São Paulo",
+    "sigla_estado" : "SP"
+  },
+  {
+    "cidade" : "Aguai",
+    "populacao" : 5915719,
+    "estado" : "Ceará",
+    "sigla_estado" : "CE"
+  },
+  {
+    "cidade" : "Agua Limpa",
+    "populacao" : 9645382,
+    "estado" : "Goiás",
+    "sigla_estado" : "GO"
+  },
+  {
+    "cidade" : "Agua Mineral",
+    "populacao" : 7843494,
+    "estado" : "Paraná",
+    "sigla_estado" : "PR"
+  },
+  {
+    "cidade" : "Aguanil",
+    "populacao" : 2498945,
+    "estado" : "Minas Gerais",
+    "sigla_estado" : "MG"
+  },
+  {
+    "cidade" : "Agua Nova",
+    "populacao" : 8394156,
+    "estado" : "Rio Grande do Norte",
+    "sigla_estado" : "RN"
+  },
+  {
+    "cidade" : "Aguapei",
+    "populacao" : 6316016,
+    "estado" : "Mato Grosso",
+    "sigla_estado" : "MT"
+  },
+  {
+    "cidade" : "Agua Preta",
+    "populacao" : 5901033,
+    "estado" : "Pernambuco",
+    "sigla_estado" : "PE"
+  },
+  {
+    "cidade" : "Agua Santa",
+    "populacao" : 1049629,
+    "estado" : "Rio Grande do Sul",
+    "sigla_estado" : "RS"
+  },
+  {
+    "cidade" : "Aguas Belas",
+    "populacao" : 3181199,
+    "estado" : "Pernambuco",
+    "sigla_estado" : "PE"
+  },
+  {
+    "cidade" : "Águas Brancas",
+    "populacao" : 9117515,
+    "estado" : "Santa Catarina",
+    "sigla_estado" : "SC"
+  },
+  {
+    "cidade" : "Aguas Claras",
+    "populacao" : 9373653,
+    "estado" : "Mato Grosso",
+    "sigla_estado" : "MT"
+  },
+  {
+    "cidade" : "Aguas Claras",
+    "populacao" : 1567703,
+    "estado" : "Rio Grande do Sul",
+    "sigla_estado" : "RS"
+  },
+  {
+    "cidade" : "Aguas da Prata",
+    "populacao" : 9270213,
+    "estado" : "São Paulo",
+    "sigla_estado" : "SP"
+  },
+  {
+    "cidade" : "Aguas de Araxa",
+    "populacao" : 5068420,
+    "estado" : "Minas Gerais",
+    "sigla_estado" : "MG"
+  },
+  {
+    "cidade" : "Águas de Chapecó",
+    "populacao" : 706294,
+    "estado" : "Santa Catarina",
+    "sigla_estado" : "SC"
+  },
+  {
+    "cidade" : "Aguas de Contendas",
+    "populacao" : 5897427,
+    "estado" : "Minas Gerais",
+    "sigla_estado" : "MG"
+  },
+  {
+    "cidade" : "Aguas de Lindoia",
+    "populacao" : 2370056,
+    "estado" : "São Paulo",
+    "sigla_estado" : "SP"
+  },
+  {
+    "cidade" : "Aguas de Santa Barbara",
+    "populacao" : 502767,
+    "estado" : "São Paulo",
+    "sigla_estado" : "SP"
+  },
+  {
+    "cidade" : "Aguas de Sao Pedro",
+    "populacao" : 8603221,
+    "estado" : "São Paulo",
+    "sigla_estado" : "SP"
+  },
+  {
+    "cidade" : "Águas do Paulista",
+    "populacao" : 2989550,
+    "estado" : "Bahia",
+    "sigla_estado" : "BA"
+  },
+  {
+    "cidade" : "Aguas Ferreas",
+    "populacao" : 2349137,
+    "estado" : "Minas Gerais",
+    "sigla_estado" : "MG"
+  },
+  {
+    "cidade" : "Aguas Formosas",
+    "populacao" : 6913905,
+    "estado" : "Minas Gerais",
+    "sigla_estado" : "MG"
+  },
+  {
+    "cidade" : "Águas Frias",
+    "populacao" : 7380094,
+    "estado" : "Santa Catarina",
+    "sigla_estado" : "SC"
+  },
+  {
+    "cidade" : "Águas Mornas",
+    "populacao" : 6276501,
+    "estado" : "Santa Catarina",
+    "sigla_estado" : "SC"
+  },
+  {
+    "cidade" : "Aguas Vermelhas",
+    "populacao" : 4303649,
+    "estado" : "Minas Gerais",
+    "sigla_estado" : "MG"
+  },
+  {
+    "cidade" : "Água Verde",
+    "populacao" : 5126243,
+    "estado" : "Ceará",
+    "sigla_estado" : "CE"
+  },
+  {
+    "cidade" : "Agua Vermelha",
+    "populacao" : 3662953,
+    "estado" : "São Paulo",
+    "sigla_estado" : "SP"
+  },
+  {
+    "cidade" : "Agua Vermelha",
+    "populacao" : 8771056,
+    "estado" : "Paraná",
+    "sigla_estado" : "PR"
+  },
+  {
+    "cidade" : "Agua Viva",
+    "populacao" : 3289660,
+    "estado" : "Minas Gerais",
+    "sigla_estado" : "MG"
+  },
+  {
+    "cidade" : "Agudo",
+    "populacao" : 3257327,
+    "estado" : "Rio Grande do Sul",
+    "sigla_estado" : "RS"
+  },
+  {
+    "cidade" : "Agudos",
+    "populacao" : 163872,
+    "estado" : "São Paulo",
+    "sigla_estado" : "SP"
+  },
+  {
+    "cidade" : "Agudos do Sul",
+    "populacao" : 6351157,
+    "estado" : "Paraná",
+    "sigla_estado" : "PR"
+  },
+  {
+    "cidade" : "Águia Branca",
+    "populacao" : 2945276,
+    "estado" : "Espírito Santo",
+    "sigla_estado" : "ES"
+  },
+  {
+    "cidade" : "Aguiar",
+    "populacao" : 191194,
+    "estado" : "Paraíba",
+    "sigla_estado" : "PB"
+  },
+  {
+    "cidade" : "Agulha",
+    "populacao" : 4244969,
+    "estado" : "São Paulo",
+    "sigla_estado" : "SP"
+  },
+  {
+    "cidade" : "Agulhas Negras",
+    "populacao" : 8463366,
+    "estado" : "Rio de Janeiro",
+    "sigla_estado" : "RJ"
+  },
+  {
+    "cidade" : "Aguti",
+    "populacao" : 3422958,
+    "estado" : "Santa Catarina",
+    "sigla_estado" : "SC"
+  },
+  {
+    "cidade" : "Aimores",
+    "populacao" : 9344515,
+    "estado" : "Minas Gerais",
+    "sigla_estado" : "MG"
+  },
+  {
+    "cidade" : "Ainhumas",
+    "populacao" : 3448671,
+    "estado" : "Mato Grosso",
+    "sigla_estado" : "MT"
+  },
+  {
+    "cidade" : "Aiquara",
+    "populacao" : 6997275,
+    "estado" : "Bahia",
+    "sigla_estado" : "BA"
+  },
+  {
+    "cidade" : "Airi",
+    "populacao" : 310278,
+    "estado" : "Pernambuco",
+    "sigla_estado" : "PE"
+  },
+  {
+    "cidade" : "Airituba",
+    "populacao" : 2384312,
+    "estado" : "Espírito Santo",
+    "sigla_estado" : "ES"
+  },
+  {
+    "cidade" : "Aiua",
+    "populacao" : 9536412,
+    "estado" : "Ceará",
+    "sigla_estado" : "CE"
+  },
+  {
+    "cidade" : "Aiuaba",
+    "populacao" : 224226,
+    "estado" : "Ceará",
+    "sigla_estado" : "CE"
+  },
+  {
+    "cidade" : "Aiure",
+    "populacao" : 1705312,
+    "estado" : "Santa Catarina",
+    "sigla_estado" : "SC"
+  },
+  {
+    "cidade" : "Aiuruoca",
+    "populacao" : 2068046,
+    "estado" : "Minas Gerais",
+    "sigla_estado" : "MG"
+  },
+  {
+    "cidade" : "Ajapi",
+    "populacao" : 9846553,
+    "estado" : "São Paulo",
+    "sigla_estado" : "SP"
+  },
+  {
+    "cidade" : "Ajuricaba",
+    "populacao" : 954614,
+    "estado" : "Rio Grande do Sul",
+    "sigla_estado" : "RS"
+  },
+  {
+    "cidade" : "Alagoa",
+    "populacao" : 768941,
+    "estado" : "Minas Gerais",
+    "sigla_estado" : "MG"
+  },
+  {
+    "cidade" : "Alagoa Grande",
+    "populacao" : 2538730,
+    "estado" : "Paraíba",
+    "sigla_estado" : "PB"
+  },
+  {
+    "cidade" : "Alagoa Nova",
+    "populacao" : 9290541,
+    "estado" : "Paraíba",
+    "sigla_estado" : "PB"
+  },
+  {
+    "cidade" : "Alagoinha",
+    "populacao" : 2005001,
+    "estado" : "Ceará",
+    "sigla_estado" : "CE"
+  },
+  {
+    "cidade" : "Alagoinha",
+    "populacao" : 4478168,
+    "estado" : "Paraíba",
+    "sigla_estado" : "PB"
+  },
+  {
+    "cidade" : "Alagoinha",
+    "populacao" : 2345728,
+    "estado" : "Pernambuco",
+    "sigla_estado" : "PE"
+  },
+  {
+    "cidade" : "Alagoinha do Piaui",
+    "populacao" : 4613349,
+    "estado" : "Piauí",
+    "sigla_estado" : "PI"
+  },
+  {
+    "cidade" : "Alagoinhas",
+    "populacao" : 3619615,
+    "estado" : "Bahia",
+    "sigla_estado" : "BA"
+  },
+  {
+    "cidade" : "Alambari",
+    "populacao" : 4945653,
+    "estado" : "São Paulo",
+    "sigla_estado" : "SP"
+  },
+  {
+    "cidade" : "Alazão",
+    "populacao" : 7791994,
+    "estado" : "Alagoas",
+    "sigla_estado" : "AL"
+  },
+  {
+    "cidade" : "Albardao",
+    "populacao" : 8908012,
+    "estado" : "Rio Grande do Sul",
+    "sigla_estado" : "RS"
+  },
+  {
+    "cidade" : "Albertina",
+    "populacao" : 4065335,
+    "estado" : "Minas Gerais",
+    "sigla_estado" : "MG"
+  },
+  {
+    "cidade" : "Alberto Isaacson",
+    "populacao" : 2989038,
+    "estado" : "Minas Gerais",
+    "sigla_estado" : "MG"
+  },
+  {
+    "cidade" : "Alberto Moreira",
+    "populacao" : 6563035,
+    "estado" : "São Paulo",
+    "sigla_estado" : "SP"
+  },
+  {
+    "cidade" : "Albertos",
+    "populacao" : 1880117,
+    "estado" : "Minas Gerais",
+    "sigla_estado" : "MG"
+  },
+  {
+    "cidade" : "Albuquerque",
+    "populacao" : 9514635,
+    "estado" : "Mato Grosso do Sul",
+    "sigla_estado" : "MS"
+  },
+  {
+    "cidade" : "Albuquerque Ne",
+    "populacao" : 1495116,
+    "estado" : "Pernambuco",
+    "sigla_estado" : "PE"
+  },
+  {
+    "cidade" : "Alcantara",
+    "populacao" : 3273157,
+    "estado" : "Maranhão",
+    "sigla_estado" : "MA"
+  },
+  {
+    "cidade" : "Alcântaras",
+    "populacao" : 2146889,
+    "estado" : "Ceará",
+    "sigla_estado" : "CE"
+  },
+  {
+    "cidade" : "Alcantil",
+    "populacao" : 9415986,
+    "estado" : "Paraíba",
+    "sigla_estado" : "PB"
+  },
+  {
+    "cidade" : "Alcantilado",
+    "populacao" : 8706524,
+    "estado" : "Mato Grosso",
+    "sigla_estado" : "MT"
+  },
+  {
+    "cidade" : "Alcinopolis",
+    "populacao" : 8955078,
+    "estado" : "Mato Grosso do Sul",
+    "sigla_estado" : "MS"
+  },
+  {
+    "cidade" : "Alcobaca",
+    "populacao" : 1276565,
+    "estado" : "Bahia",
+    "sigla_estado" : "BA"
+  },
+  {
+    "cidade" : "Aldeia",
+    "populacao" : 9716582,
+    "estado" : "Minas Gerais",
+    "sigla_estado" : "MG"
+  },
+  {
+    "cidade" : "Aldeia",
+    "populacao" : 1965906,
+    "estado" : "São Paulo",
+    "sigla_estado" : "SP"
+  },
+  {
+    "cidade" : "Aldeia de Carapicuiba",
+    "populacao" : 9936930,
+    "estado" : "São Paulo",
+    "sigla_estado" : "SP"
+  },
+  {
+    "cidade" : "Aldeias Altas",
+    "populacao" : 1440263,
+    "estado" : "Maranhão",
+    "sigla_estado" : "MA"
+  },
+  {
+    "cidade" : "Alecrim",
+    "populacao" : 5268073,
+    "estado" : "Rio Grande do Sul",
+    "sigla_estado" : "RS"
+  },
+  {
+    "cidade" : "Alecrim",
+    "populacao" : 5968353,
+    "estado" : "Alagoas",
+    "sigla_estado" : "AL"
+  },
+  {
+    "cidade" : "Alecrim",
+    "populacao" : 4283467,
+    "estado" : "Paraná",
+    "sigla_estado" : "PR"
+  },
+  {
+    "cidade" : "Alegre",
+    "populacao" : 5499369,
+    "estado" : "Minas Gerais",
+    "sigla_estado" : "MG"
+  },
+  {
+    "cidade" : "Alegre",
+    "populacao" : 328605,
+    "estado" : "Espírito Santo",
+    "sigla_estado" : "ES"
+  },
+  {
+    "cidade" : "Alegrete",
+    "populacao" : 4035152,
+    "estado" : "Rio Grande do Sul",
+    "sigla_estado" : "RS"
+  },
+  {
+    "cidade" : "Alegrete do Piaui",
+    "populacao" : 699395,
+    "estado" : "Piauí",
+    "sigla_estado" : "PI"
+  },
+  {
+    "cidade" : "Alegria",
+    "populacao" : 3085530,
+    "estado" : "Minas Gerais",
+    "sigla_estado" : "MG"
+  },
+  {
+    "cidade" : "Alegria",
+    "populacao" : 5966028,
+    "estado" : "Rio Grande do Sul",
+    "sigla_estado" : "RS"
+  },
+  {
+    "cidade" : "Alem Paraiba",
+    "populacao" : 4288251,
+    "estado" : "Minas Gerais",
+    "sigla_estado" : "MG"
+  },
+  {
+    "cidade" : "Alenquer",
+    "populacao" : 601348,
+    "estado" : "Pará",
+    "sigla_estado" : "PA"
+  },
+  {
+    "cidade" : "Alexandra",
+    "populacao" : 6646407,
+    "estado" : "Paraná",
+    "sigla_estado" : "PR"
+  },
+  {
+    "cidade" : "Alexandria",
+    "populacao" : 1428010,
+    "estado" : "Rio Grande do Norte",
+    "sigla_estado" : "RN"
+  },
+  {
+    "cidade" : "Alexandrita",
+    "populacao" : 7409382,
+    "estado" : "Minas Gerais",
+    "sigla_estado" : "MG"
+  },
+  {
+    "cidade" : "Alexania",
+    "populacao" : 727930,
+    "estado" : "Goiás",
+    "sigla_estado" : "GO"
+  },
+  {
+    "cidade" : "Alfenas",
+    "populacao" : 7126580,
+    "estado" : "Minas Gerais",
+    "sigla_estado" : "MG"
+  },
+  {
+    "cidade" : "Alfredo Brenner",
+    "populacao" : 3703679,
+    "estado" : "Rio Grande do Sul",
+    "sigla_estado" : "RS"
+  },
+  {
+    "cidade" : "Alfredo Chaves",
+    "populacao" : 5022561,
+    "estado" : "Espírito Santo",
+    "sigla_estado" : "ES"
+  },
+  {
+    "cidade" : "Alfredo Guedes",
+    "populacao" : 9659198,
+    "estado" : "São Paulo",
+    "sigla_estado" : "SP"
+  },
+  {
+    "cidade" : "Alfredo Marcondes",
+    "populacao" : 3851628,
+    "estado" : "São Paulo",
+    "sigla_estado" : "SP"
+  },
+  {
+    "cidade" : "Alfredo Vasconcelos",
+    "populacao" : 1953572,
+    "estado" : "Minas Gerais",
+    "sigla_estado" : "MG"
+  },
+  {
+    "cidade" : "Alfredo Wagner",
+    "populacao" : 2597661,
+    "estado" : "Santa Catarina",
+    "sigla_estado" : "SC"
+  },
+  {
+    "cidade" : "Algodao",
+    "populacao" : 4174845,
+    "estado" : "Paraíba",
+    "sigla_estado" : "PB"
+  },
+  {
+    "cidade" : "Algodão",
+    "populacao" : 3279803,
+    "estado" : "Bahia",
+    "sigla_estado" : "BA"
+  },
+  {
+    "cidade" : "Algodoal",
+    "populacao" : 6008985,
+    "estado" : "Pará",
+    "sigla_estado" : "PA"
+  },
+  {
+    "cidade" : "Algodoes",
+    "populacao" : 3101655,
+    "estado" : "Pernambuco",
+    "sigla_estado" : "PE"
+  }
+]
