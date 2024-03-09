@@ -149,9 +149,27 @@ order by c.nome
 		</band>
 	</columnFooter>
 	<pageFooter>
-		<band height="54" splitType="Stretch"/>
+		<band height="61" splitType="Stretch">
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="60" y="0" width="100" height="30" uuid="2597163e-4683-4f3f-95aa-ec5960404880"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="0" width="59" height="30" uuid="9173cd12-ea9e-4e4c-ba59-70444b324c0e"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Gerado em]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="367" y="8" width="100" height="30" uuid="a2c3cea1-ae05-4247-adc5-e12b70c8da4f"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Página " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="467" y="8" width="100" height="30" uuid="d6370ec6-1fa4-44bb-a0d1-1013ff68f8ee"/>
+				<textElement textAlignment="Left"/>
+				<textFieldExpression><![CDATA[" de " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
 	</pageFooter>
-	<summary>
-		<band height="42" splitType="Stretch"/>
-	</summary>
 </jasperReport>
