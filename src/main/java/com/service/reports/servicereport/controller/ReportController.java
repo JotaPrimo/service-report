@@ -9,6 +9,12 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.Schema;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.tags.Tag;
+
 import java.io.IOException;
 
 @RestController
@@ -32,6 +38,17 @@ public class ReportController {
         }
     }
 
+    @Operation(summary = "Gerar relatórios pdf apenas com parâmetros", description = "Recurso para gerar relatórios pdf apenas com parâmetros",
+            responses = {
+                    @ApiResponse(
+                            responseCode = "200",
+                            description = "Relatório gerado com sucesso",
+                            content = @Content(mediaType = "application/json")),
+                    @ApiResponse(
+                            responseCode = "422",
+                            description = "Relatório não processado por dados inválidos",
+                            content = @Content(mediaType = "application/json"))
+            })
     @PostMapping(produces = MediaType.APPLICATION_PDF_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<byte[]> generateReportV2(@RequestParam String reportName, @RequestBody String jsonData) {
         try {
@@ -43,6 +60,17 @@ public class ReportController {
         }
     }
 
+    @Operation(summary = "Gerar relatórios com  listagem e parâmetros", description = "Recurso para gerar relatórios pdf com  listagem e parâmetros",
+            responses = {
+                    @ApiResponse(
+                            responseCode = "200",
+                            description = "Relatório gerado com sucesso",
+                            content = @Content(mediaType = "application/json")),
+                    @ApiResponse(
+                            responseCode = "422",
+                            description = "Relatório não processado por dados inválidos",
+                            content = @Content(mediaType = "application/json"))
+            })
     @PostMapping(value = "/parameters", produces = MediaType.APPLICATION_PDF_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<byte[]> generateReportWithParams(@RequestParam String reportName, @RequestBody String jsonData) {
         try {
