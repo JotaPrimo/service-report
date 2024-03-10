@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.2.final using JasperReports Library version 6.21.2-8434a0bd7c3bbc37cbf916f2968d35e4b165821a  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e1c1cdfa-7278-49af-a0e1-f1f096ba62e3">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="JSON_DataAdapter.jrdax"/>
+	<parameter name="Parameter1" class="java.util.Map">
+		<defaultValueExpression><![CDATA[$P{Parameter1}]]></defaultValueExpression>
+	</parameter>
+	<queryString language="json">
+		<![CDATA[cidades]]>
+	</queryString>
+	<field name="cidade" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="cidade"/>
+		<fieldDescription><![CDATA[cidade]]></fieldDescription>
+	</field>
+	<field name="estado" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="estado"/>
+		<fieldDescription><![CDATA[estado]]></fieldDescription>
+	</field>
+	<field name="sigla_estado" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="sigla_estado"/>
+		<fieldDescription><![CDATA[sigla_estado]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="47" splitType="Stretch">
+			<textField>
+				<reportElement x="39" y="17" width="100" height="30" uuid="259fcaac-cc21-4e82-a468-c8b1b2709805"/>
+				<textFieldExpression><![CDATA[$P{Parameter1}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="185" height="30" uuid="81ec4411-f0aa-422c-8a4d-d519bf79ee58">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="03dd2162-9695-4b17-a754-44a5cd173567"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[cidade]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="185" y="0" width="185" height="30" uuid="b3c91617-2793-4301-9911-a7ee03ebf37d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5707abe3-3627-469c-a908-32f532ad0155"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[estado]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="0" width="185" height="30" uuid="afa50d32-baa0-458b-8710-af5fca4c2709">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="16223c30-a45d-4be9-9f51-8e041a4bc6bd"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[sigla_estado]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="185" height="30" uuid="4d1d9ff2-9611-45c0-a1e3-68a43df044c8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="03dd2162-9695-4b17-a754-44a5cd173567"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{cidade}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="185" y="0" width="185" height="30" uuid="3dd2a12f-e9a8-4c42-ac91-27b6effe0b9f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5707abe3-3627-469c-a908-32f532ad0155"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{estado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="370" y="0" width="185" height="30" uuid="239431d8-f2a8-4d84-a40e-1d2962385f5f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="16223c30-a45d-4be9-9f51-8e041a4bc6bd"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{sigla_estado}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
