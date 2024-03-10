@@ -13,7 +13,7 @@ import java.io.IOException;
 
 @RestController
 @RequestMapping(ApiPath.REPORT_SERVICE)
-public class CidadeReportController {
+public class ReportController {
 
     @Autowired
     private RelatorioService reportService;
@@ -21,39 +21,36 @@ public class CidadeReportController {
     @PostMapping(value = "/listAll", produces = MediaType.APPLICATION_PDF_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<byte[]> generateReport(@RequestBody String jsonData) {
         try {
-            // Nome do relatório (pode ser dinâmico com base nos dados se necessário)
-            String reportName = "allCidades";
 
+            String reportName = "allCidades";
             byte[] reportBytes = reportService.generateReport(reportName, jsonData);
             return ResponseEntity.ok().body(reportBytes);
+
         } catch (IOException | JRException e) {
-            e.printStackTrace(); // Trate a exceção adequadamente em uma aplicação real
-            return ResponseEntity.status(500).build();
+            e.printStackTrace();
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
         }
     }
 
     @PostMapping(produces = MediaType.APPLICATION_PDF_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<byte[]> generateReportV2(@RequestParam String reportName, @RequestBody String jsonData) {
         try {
-            //String reportName = "allCidades";
             byte[] reportBytes = reportService.generateReport(reportName, jsonData);
             return ResponseEntity.ok().body(reportBytes);
         } catch (IOException | JRException e) {
-            e.printStackTrace(); // Trate a exceção adequadamente em uma aplicação real
-            return ResponseEntity.status(500).build();
+            e.printStackTrace();
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
         }
     }
-
 
     @PostMapping(value = "/parameters", produces = MediaType.APPLICATION_PDF_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<byte[]> generateReportWithParams(@RequestParam String reportName, @RequestBody String jsonData) {
         try {
-            //String reportName = "allCidades";
             byte[] reportBytes = reportService.generateReportWithParams(reportName, jsonData);
             return ResponseEntity.ok().body(reportBytes);
         } catch (Exception e) {
-            e.printStackTrace(); // Trate a exceção adequadamente em uma aplicação real
-            return ResponseEntity.status(500).build();
+            e.printStackTrace();
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
         }
     }
 }

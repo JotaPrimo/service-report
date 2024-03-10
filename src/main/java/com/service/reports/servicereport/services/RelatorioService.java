@@ -3,6 +3,8 @@ package com.service.reports.servicereport.services;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.service.reports.servicereport.config.Constantes;
+import com.service.reports.servicereport.enums.IndiceJsonReport;
 import net.sf.jasperreports.engine.*;
 import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
 import net.sf.jasperreports.engine.data.JsonDataSource;
@@ -22,135 +24,104 @@ import java.util.Map;
 public class RelatorioService {
     private final ResourceLoader resourceLoader;
 
-
     public RelatorioService(ResourceLoader resourceLoader) {
         this.resourceLoader = resourceLoader;
     }
 
     public byte[] generateReport(String reportName, String jsonData) throws JRException, IOException {
-        // Caminho do relatório no diretório "resources/reports"
-        String reportPath = "classpath:reports/" + reportName + ".jrxml";
 
-        // Carrega o arquivo do relatório usando a classe Resource
+        String reportPath = returnReportPathJrxml(reportName);
+
         Resource resource = resourceLoader.getResource(reportPath);
 
-        // Verifica se o recurso existe
         if (resource.exists()) {
-            // Compila o relatório JRXML
             InputStream inputStream = resource.getInputStream();
             JasperReport jasperReport = JasperCompileManager.compileReport(inputStream);
 
-            // Converte a string JSON em um InputStream
             InputStream jsonInputStream = new ByteArrayInputStream(jsonData.getBytes());
 
-            // Cria um dataSource a partir do JSON
             JsonDataSource jsonDataSource = new JsonDataSource(jsonInputStream);
 
-            // Parâmetros do relatório (se necessário)
             Map<String, Object> parameters = new HashMap<>();
 
-            // Gera o relatório em formato PDF
             byte[] reportBytes = JasperRunManager.runReportToPdf(jasperReport, parameters, jsonDataSource);
 
-            // Fecha os inputStreams
             inputStream.close();
             jsonInputStream.close();
 
             return reportBytes;
         } else {
-            throw new IllegalArgumentException("O relatório não foi encontrado: " + reportName);
+            throw new IllegalArgumentException("O relatório não foi encontrado: " .concat(reportName));
         }
     }
 
     public byte[] generateReportWithParams(String reportName, String jsonData) throws Exception {
 
-        // Caminho do relatório no diretório "resources/reports"
-        String reportPath = "classpath:reports/" + reportName + ".jrxml";
+        String reportPath = returnReportPathJrxml(reportName);
 
-        // Carrega o arquivo do relatório usando a classe Resource
         Resource resource = resourceLoader.getResource(reportPath);
 
-        // Verifica se o recurso existe
         if (resource.exists()) {
-            // Compila o relatório JRXML
+
             InputStream inputStream = resource.getInputStream();
             JasperReport jasperReport = JasperCompileManager.compileReport(inputStream);
 
-            // Converte a string JSON em um InputStream
-            JsonNode apenasDadosDoReport = getDadosReport(jsonData);
+            JsonNode apenasDadosDoReport = getDadosPorIndiceReport(jsonData, IndiceJsonReport.DADOS_REPORT.getValor());
             InputStream jsonInputStream = new ByteArrayInputStream(apenasDadosDoReport.toString().getBytes());
 
-            // Cria um dataSource a partir do JSON
             JsonDataSource jsonDataSource = new JsonDataSource(jsonInputStream);
 
-            // Parâmetros do relatório (se necessário)
             Map<String, Object> parameters = getAtributosFromJson(jsonData);
 
-            // Gera o relatório em formato PDF
             byte[] reportBytes = JasperRunManager.runReportToPdf(jasperReport, parameters, jsonDataSource);
 
-            // Fecha os inputStreams
             inputStream.close();
             jsonInputStream.close();
 
             return reportBytes;
         } else {
-            throw new IllegalArgumentException("O relatório não foi encontrado: " + reportName);
+            throw new IllegalArgumentException("O relatório não foi encontrado: " .concat(reportName));
         }
-
     }
 
     public Map<String, Object> getAtributosFromJson(String jsonString) throws Exception {
-        // Criar um objeto ObjectMapper
-        ObjectMapper objectMapper = new ObjectMapper();
 
-        // Converter o JSON em um nó JsonNode
-        JsonNode jsonNode = getParamnsReport(jsonString);
+        JsonNode jsonNode = getDadosPorIndiceReport(jsonString, IndiceJsonReport.PARAMS.getValor());
 
-        // Verificar se o nó é um objeto
         if (jsonNode.isObject()) {
-            // Criar um mapa para armazenar os nomes dos atributos e seus valores
-            Map<String, Object> atributos = new HashMap<>();
-
-            // Iterar sobre os campos do objeto JSON
-            Iterator<Map.Entry<String, JsonNode>> campos = jsonNode.fields();
-            while (campos.hasNext()) {
-                Map.Entry<String, JsonNode> campo = campos.next();
-                String nomeAtributo = campo.getKey();
-                JsonNode valorAtributo = campo.getValue();
-                atributos.put(nomeAtributo, valorAtributo.asText()); // Armazenar o valor como texto (pode ser ajustado conforme necessário)
-            }
-
-            return atributos;
+            return passarParametrosParaMap(jsonNode.fields());
         }
 
-        // Se o nó não for um objeto, pode retornar um mapa vazio ou lançar uma exceção, dependendo do seu requisito.
         return Collections.emptyMap();
     }
 
-    public static JsonNode getDadosReport(String jsonString) throws Exception {
-        // Criar um objeto ObjectMapper
-        ObjectMapper objectMapper = new ObjectMapper();
-
-        // Converter o JSON em um nó JsonNode
-        JsonNode jsonNode = objectMapper.readTree(jsonString);
-
-        // Obter o nó com a chave "dadosReport"
-        JsonNode dadosReportNode = jsonNode.path("dadosReport");
-
-        return dadosReportNode;
+    public static Map<String, Object> passarParametrosParaMap(Iterator<Map.Entry<String, JsonNode>> campos) {
+        Map<String, Object> atributos = new HashMap<>();
+        while (campos.hasNext()) {
+            Map.Entry<String, JsonNode> campo = campos.next();
+            atributos.put(campo.getKey(), campo.getValue().asText());
+        }
+        return atributos;
     }
 
-    public static JsonNode getParamnsReport(String jsonString) throws Exception {
-        // Criar um objeto ObjectMapper
+    public static JsonNode getDadosPorIndiceReport(String jsonString, String indice) throws Exception {
+
         ObjectMapper objectMapper = new ObjectMapper();
 
-        // Converter o JSON em um nó JsonNode
         JsonNode jsonNode = objectMapper.readTree(jsonString);
 
-        // Obter o nó com a chave "dadosReport"
-        JsonNode dadosReportNode = jsonNode.path("params");
-
-        return dadosReportNode;
+        return jsonNode.path(indice);
     }
+
+    public static String returnReportPathJrxml(String reportName) {
+
+        if (reportName.isBlank()) {
+            throw new IllegalArgumentException("O nome do relatório não pode ser nulo");
+        }
+
+        StringBuilder pathBuilder = new StringBuilder(Constantes.REPORTS_DIRECTORY);
+
+        return pathBuilder.append(reportName).append(Constantes.EXT_JRXML).toString();
+    }
+
 }
