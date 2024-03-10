@@ -1,6 +1,6 @@
 package com.service.reports.servicereport.exceptions;
 
-import com.service.reports.servicereport.exceptions.CustonExceptions.ReportNotFoundException;
+import com.service.reports.servicereport.web.exceptions.ReportNotFoundException;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;

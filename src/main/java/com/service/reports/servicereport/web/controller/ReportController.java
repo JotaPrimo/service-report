@@ -1,4 +1,4 @@
-package com.service.reports.servicereport.controller;
+package com.service.reports.servicereport.web.controller;
 
 import com.service.reports.servicereport.config.ApiPath;
 import com.service.reports.servicereport.services.RelatorioService;

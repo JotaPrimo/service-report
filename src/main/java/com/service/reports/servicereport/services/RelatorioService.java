@@ -1,12 +1,12 @@
 package com.service.reports.servicereport.services;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.service.reports.servicereport.config.Constantes;
 import com.service.reports.servicereport.enums.IndiceJsonReport;
+import com.service.reports.servicereport.web.exceptions.ReportNameBlank;
+import com.service.reports.servicereport.web.exceptions.ReportNotFoundException;
 import net.sf.jasperreports.engine.*;
-import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
 import net.sf.jasperreports.engine.data.JsonDataSource;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
@@ -51,7 +51,7 @@ public class RelatorioService {
 
             return reportBytes;
         } else {
-            throw new IllegalArgumentException("O relatório não foi encontrado: " .concat(reportName));
+            throw new ReportNotFoundException("O relatório não foi encontrado: " .concat(reportName));
         }
     }
 
@@ -80,7 +80,7 @@ public class RelatorioService {
 
             return reportBytes;
         } else {
-            throw new IllegalArgumentException("O relatório não foi encontrado: " .concat(reportName));
+            throw new ReportNotFoundException("O relatório não foi encontrado: " .concat(reportName));
         }
     }
 
@@ -116,7 +116,7 @@ public class RelatorioService {
     public static String returnReportPathJrxml(String reportName) {
 
         if (reportName.isBlank()) {
-            throw new IllegalArgumentException("O nome do relatório não pode ser nulo");
+            throw new ReportNameBlank("O nome do relatório não pode ser nulo");
         }
 
         StringBuilder pathBuilder = new StringBuilder(Constantes.REPORTS_DIRECTORY);

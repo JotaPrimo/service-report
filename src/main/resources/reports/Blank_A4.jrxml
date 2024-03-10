@@ -30,7 +30,17 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="79" splitType="Stretch"/>
+		<band height="60" splitType="Stretch">
+			<staticText>
+				<reportElement x="200" y="10" width="169" height="30" uuid="fac70c96-460e-4cfa-800c-bf63062443f6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Relatório Geral de Municípios]]></text>
+			</staticText>
+			<image>
+				<reportElement x="0" y="0" width="60" height="60" uuid="18a8b7e6-338a-4830-b44c-562ad12a7216"/>
+				<imageExpression><![CDATA["https://avatars.githubusercontent.com/u/63259982?v=4"]]></imageExpression>
+			</image>
+		</band>
 	</title>
 	<pageHeader>
 		<band height="34" splitType="Stretch">
