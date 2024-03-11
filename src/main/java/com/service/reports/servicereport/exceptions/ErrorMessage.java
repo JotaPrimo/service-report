@@ -1,12 +1,12 @@
 package com.service.reports.servicereport.exceptions;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
-import com.service.reports.servicereport.services.DataService;
-
+import com.service.reports.servicereport.utils.DataUtils;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -37,14 +37,14 @@ public class ErrorMessage {
     public ErrorMessage() {
     }
 
-    public ErrorMessage(HttpServletRequest request, HttpStatus status, String title,String message) {
+    public ErrorMessage(HttpServletRequest request, HttpStatus status, String title, String message) {
         this.path = request.getRequestURI();
         this.method = request.getMethod();
         this.status = status.value();
         this.statusText = status.getReasonPhrase();
         this.title = title;
         this.message = message;
-        this.when = DataService.getDataAtualDMYHMS();
+        this.when = DataUtils.getDataAtualDMYHMS();
     }
 
     public ErrorMessage(HttpServletRequest request, HttpStatus status, String title, String message, BindingResult result) {
@@ -54,13 +54,13 @@ public class ErrorMessage {
         this.statusText = status.getReasonPhrase();
         this.message = message;
         this.title = title;
-        this.when = DataService.getDataAtualDMYHMS();
+        this.when = DataUtils.getDataAtualDMYHMS();
         addErrors(result);
     }
 
     private void addErrors(BindingResult result) {
         this.errors = new HashMap<>();
-        for(FieldError fieldError :  result.getFieldErrors()) {
+        for (FieldError fieldError : result.getFieldErrors()) {
             this.errors.put(fieldError.getField(), fieldError.getDefaultMessage());
         }
     }

@@ -6,7 +6,7 @@ public enum IndiceJsonReport {
 
     private final String valor;
 
-    IndiceJsonReport(String valor ) {
+    IndiceJsonReport(String valor) {
         this.valor = valor;
     }
 

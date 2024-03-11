@@ -1,9 +1,9 @@
-package com.service.reports.servicereport.services;
+package com.service.reports.servicereport.utils;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-public class DataService {
+public class DataUtils {
     public static String getDataAtualDMYHMS() {
         LocalDateTime now = LocalDateTime.now();
 

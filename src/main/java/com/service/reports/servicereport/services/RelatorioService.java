@@ -6,7 +6,10 @@ import com.service.reports.servicereport.config.Constantes;
 import com.service.reports.servicereport.enums.IndiceJsonReport;
 import com.service.reports.servicereport.web.exceptions.ReportNameBlank;
 import com.service.reports.servicereport.web.exceptions.ReportNotFoundException;
-import net.sf.jasperreports.engine.*;
+import net.sf.jasperreports.engine.JRException;
+import net.sf.jasperreports.engine.JasperCompileManager;
+import net.sf.jasperreports.engine.JasperReport;
+import net.sf.jasperreports.engine.JasperRunManager;
 import net.sf.jasperreports.engine.data.JsonDataSource;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
@@ -51,7 +54,7 @@ public class RelatorioService {
 
             return reportBytes;
         } else {
-            throw new ReportNotFoundException("O relatório não foi encontrado: " .concat(reportName));
+            throw new ReportNotFoundException("O relatório não foi encontrado: ".concat(reportName));
         }
     }
 
@@ -80,7 +83,7 @@ public class RelatorioService {
 
             return reportBytes;
         } else {
-            throw new ReportNotFoundException("O relatório não foi encontrado: " .concat(reportName));
+            throw new ReportNotFoundException("O relatório não foi encontrado: ".concat(reportName));
         }
     }
 
